@@ -1,5 +1,5 @@
 # Holberton School Bassh Learning Repository
-This repository contains the files of project 0, which focuses on the management of Shell on Linux
+This repository contains the files of Linux Fundations, which focuses on the management of Shell on Linux
 
 ## Getting Started
 Each script execute it with the following syntax:
