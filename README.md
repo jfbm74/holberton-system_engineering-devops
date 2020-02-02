@@ -1,4 +1,4 @@
-# Holberton School Bassh Learning Repository
+# Holberton School Bash Learning Repository
 This repository contains the files of Linux Fundations, which focuses on the management of Shell on Linux
 
 ## Getting Started
