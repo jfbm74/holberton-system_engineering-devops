@@ -65,7 +65,7 @@ def export_csv(user, tasks):
         user  : User Object
         tasks : Collection of User's Tasks
     """
-    employee_name = user[0]['name']
+    employee_name = user[0]['username']
     with open(argv[1] + '.csv', 'w', newline='') as f:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         for task in tasks:
