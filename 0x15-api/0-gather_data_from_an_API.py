@@ -56,6 +56,7 @@ def show_tasks_status(user, tasks):
           .format(employee_name, completed, len(all_tasks)))
     print(title_completed_tasks, end='')
 
+
 if __name__ == '__main__':
     user = get_user(argv[1])
     tasks = get_tasks(argv[1])
