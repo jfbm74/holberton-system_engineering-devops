@@ -71,7 +71,8 @@ def export_csv(user, tasks):
     with open(csvfile, mode='w') as file:
         towrite = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
         for task in tasks:
-            towrite.writerow([employee_id, employee_name, task['completed'], task['title']])
+            towrite.writerow([employee_id, employee_name,
+                              task['completed'], task['title']])
 
 
 if __name__ == '__main__':
