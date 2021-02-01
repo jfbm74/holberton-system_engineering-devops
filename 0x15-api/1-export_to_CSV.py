@@ -66,13 +66,11 @@ def export_csv(user, tasks):
         tasks : Collection of User's Tasks
     """
     employee_name = user[0]['name']
-    employee_id = user[0]['id']
-    csvfile = '{}.csv'.format(employee_id)
-    with open(csvfile, mode='w') as file:
-        towrite = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
+    with open(argv[1] + '.csv', 'w', newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         for task in tasks:
-            towrite.writerow([employee_id, employee_name,
-                              task['completed'], task['title']])
+            writer.writerow([task['userId'], employee_name,
+                             task['completed'], task['title']])
 
 
 if __name__ == '__main__':
