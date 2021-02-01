@@ -5,9 +5,9 @@ progress for a given employee ID
 """
 
 
+import csv
 import requests
 from sys import argv
-import csv
 
 
 def get_user(id):
