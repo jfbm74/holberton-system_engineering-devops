@@ -47,7 +47,7 @@ def show_tasks_status(user, tasks):
         user ([user]): [User Object]
         tasks ([tasks]): [Tasks Object]
     """
-    employee_name = user[0]['name']
+    employee_name = user[0]['username']
     all_tasks = tasks
     completed = 0
     title_completed_tasks = ''
@@ -84,7 +84,7 @@ def export_json(user, tasks):
         user  : User Object
         tasks : Collection of User's Tasks
     """
-    employee_name = user[0]['name']
+    employee_name = user[0]['username']
     employee_id = user[0]['id']
     all_tasks = []
     json_file = '{}.json'.format(employee_id)
