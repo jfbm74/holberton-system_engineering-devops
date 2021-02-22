@@ -45,15 +45,14 @@ def show_tasks_status(user, tasks):
         tasks ([tasks]): [Tasks Object]
     """
     employee_name = user[0]['name']
-    all_tasks = tasks
     completed = 0
     title_completed_tasks = ''
-    for task in all_tasks:
+    for task in tasks:
         if task['completed'] is True:
             completed += 1
             title_completed_tasks += '\t ' + task['title'] + '\n'
     print('Employee {} is done with tasks({}/{}):'
-          .format(employee_name, completed, len(all_tasks)))
+          .format(employee_name, completed, len(tasks)))
     print(title_completed_tasks, end='')
 
 
